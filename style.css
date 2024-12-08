@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto+Mono", sans-serif;
+}
+
+.container {
+    text-align: center;
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: 24px;
+    
+}
+.logoicon {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: 200px;
+}
+.logo-small {
+    display: inline-block;
+    margin-left: 450px;
+}
+.small-logo {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid orange;
+    border-radius: 20px; 
+}
+.logotext {
+    margin-left: 10px;
+    font-size: 30px;
+    display: inline-block;
+    text-align: left; 
+    margin: 10px;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px
+}
+.picture img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.noidung {
+    text-align: left;
+    max-width: 400px;
+}
+.noidung p {
+    margin-bottom: 70px;
+}
+.noidungquydinh {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+.noidungquydinh div {
+    text-align: center;
+}
+.noidungquydinh h1{
+    font-size: 36px;
+    margin: 0;
+    color: rgb(240, 106, 129);
+}
+.noidungquydinh p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+.tieude {
+    text-align: left ; /* Căn lề giữa cho tiêu đề */
+    margin-top: 40px; /* Thêm khoảng cách trên để không bị dính vào các phần khác */
+}
+.tieude h1 {
+    text-align: left;
+    margin-left: 390px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.noidungtieude {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.download {
+    display: inline-block; /* Biến phần tử thành inline-block để có thể căn chỉnh */
+    padding: 10px 20px; /* Thêm khoảng cách trong phần tử */
+    border: 2px solid pink; 
+    color: pink;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px; /* Bo góc viền */
+    margin: 50px; /* Thêm khoảng cách trên */
+}
+.skills-container {
+    display: flex;
+    justify-content: center; /* Căn giữa hai phần */
+    gap: 0px; /* Khoảng cách giữa CORE SKILLS và OTHER SKILLS */
+    margin: 100x; /* Thêm khoảng cách trên/dưới */
+    text-align: center;
+}
+.core-skills {
+    margin-left: 140px;
+
+}
+.other-skills {
+    margin-right: 300px;
+
+}
+
+.core-skills h1, .other-skills h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.skills-box .canle1 .canle2{
+    display: inline-block;
+    border-width: 200px;
+}
+
+.skill-item {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px; /* Khoảng cách giữa các ô */
+}
+.canle1 {
+    margin-left: 200px;
+}
+.canle2 {
+    margin-right: 50px;
+}
