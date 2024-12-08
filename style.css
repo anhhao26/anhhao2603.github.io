@@ -79,8 +79,8 @@
     font-size: 16px;
 }
 .tieude {
-    text-align: left ; /* Căn lề giữa cho tiêu đề */
-    margin-top: 40px; /* Thêm khoảng cách trên để không bị dính vào các phần khác */
+    text-align: left ;
+    margin-top: 40px; 
 }
 .tieude h1 {
     text-align: left;
@@ -96,20 +96,20 @@
     margin: 0 auto;
 }
 .download {
-    display: inline-block; /* Biến phần tử thành inline-block để có thể căn chỉnh */
-    padding: 10px 20px; /* Thêm khoảng cách trong phần tử */
+    display: inline-block;
+    padding: 10px 20px;
     border: 2px solid pink; 
     color: pink;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 5px; /* Bo góc viền */
-    margin: 50px; /* Thêm khoảng cách trên */
+    border-radius: 5px;
+    margin: 50px;
 }
 .skills-container {
     display: flex;
-    justify-content: center; /* Căn giữa hai phần */
-    gap: 0px; /* Khoảng cách giữa CORE SKILLS và OTHER SKILLS */
-    margin: 100x; /* Thêm khoảng cách trên/dưới */
+    justify-content: center;
+    gap: 0px;
+    margin: 100x;
     text-align: center;
 }
 .core-skills {
@@ -126,8 +126,8 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    text-align: center; /* Căn giữa tiêu đề */
-    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .skills-box .canle1 .canle2{
@@ -142,7 +142,7 @@
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
-    margin: 10px; /* Khoảng cách giữa các ô */
+    margin: 10px;
 }
 .canle1 {
     margin-left: 200px;
