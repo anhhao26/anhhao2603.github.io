@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid figure figcaption, .grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: #2f3238;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+figure.effect-lily img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure.effect-lily figcaption {
+    text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+figure.effect-lily h2, figure.effect-lily p {
+    transform: translate3d(0, 40px, 0);
+    transition-duration: 1.5s;
+}
+
+figure.effect-lily p {
+    color: whites;
+    transform: translateY(20px);
+    opacity: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+figure.effect-lily:hover h2, figure.effect-lily:hover p {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+.grid figure h2 {
+    font-weight: 300;
+}
+.grid figure p {
+    font-size: 15px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+figure.effect-sadie h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    -webkit-transition: transform 0.35s ease, color 0.35s ease;
+    transition: transform 0.35s ease, color 0.35s ease;
+}
+figure.effect-sadie p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+figure.effect-sadie:hover h2 {
+    color: white;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+figure.effect-sadie:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+figure.effect-sadie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*-------------------------------------------------------------------------------------------*/
+figure.effect-honey h2 {
+    position: absolute;
+    bottom: 80px; 
+    left: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+    transform: translateY(-10px); 
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+figure.effect-honey:hover h2 {
+    transform: translateY(10px);
+}
+figure.effect-honey h2 i {
+    display: block;
+    font-size: 28px; 
+    font-style: normal;
+    font-weight: 300;
+    color: white; 
+    opacity: 0; 
+    position: absolute;
+    bottom: 10px; 
+    left: 20px;
+    transform: translateY(10px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+figure.effect-honey:hover h2 i {
+    opacity: 1; 
+    transform: translateY(30px);
+}
+figure.effect-honey figcaption::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: white;
+    content: '';
+    opacity: 0;
+    transform: translateY(10px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+figure.effect-honey:hover figcaption::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+figure.effect-honey img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*----------------------------------------------------------------------------------*/
+figure.effect-julia h2 {
+    position: relative;
+    padding: 25px;
+    font-size: 34px; 
+    font-weight: bold;
+    color: #fff;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+figure.effect-julia:hover h2 {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+figure.effect-julia figcaption {
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+figure.effect-julia:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+figure.effect-julia p {
+    display: inline-block;
+    margin: 0 0 0.25em;
+    padding: 0.4em 1em;
+    background: white;
+    color: #2f3238;
+    text-transform: none;
+    font-size: 18px; 
+    opacity: 0;
+    transform: translateX(-50px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+figure.effect-julia p:first-child {
+    transition-delay: 0.15s;
+}
+figure.effect-julia p:nth-of-type(2) {
+    transition-delay: 0.3s;
+}
+figure.effect-julia p:nth-of-type(3) {
+    transition-delay: 0.45s;
+}
+figure.effect-julia:hover p {
+    opacity: 1;
+    transform: translateX(0);
+}
+figure.effect-julia img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+figure.effect-julia:hover img {
+    transform: scale(1.05); 
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+figure.effect-goliath h2 {
+    position: absolute;
+    bottom: 30px; 
+    left: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    z-index: 2;
+    transition: transform 0.35s ease-out; 
+}
+figure.effect-goliath p {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px; 
+    color: white; 
+    background: rgb(180, 77, 77);
+    opacity: 0;
+    transition: transform 0.35s ease-out, opacity 0.35s ease-out;
+    transform: translateY(60px); 
+}
+figure.effect-goliath:hover h2 {
+    transform: translateY(-80px);
+}
+
+figure.effect-goliath:hover p {
+    transform: translateY(0); 
+    opacity: 1; 
+}
+figure.effect-goliath img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0.8;
+}
+figure.effect-goliath:hover img {
+    transform: scale(1.1); 
+    opacity: 1;
+}
+/*-----------------------------------------------------------------------------------------------*/
+figure.effect-selena img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-out, border 0.3s ease-in-out;
+    z-index: 1;
+}
+figure.effect-selena h2 {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    transition: transform 0.4s ease-out; 
+}
+figure.effect-selena:hover h2 {
+    transform: translateY(-30px);
+}
+figure.effect-selena p {
+    position: absolute;
+    right: 70px;
+    top: 100px;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+figure.effect-selena:hover p {
+    opacity: 1;
+}
+figure.effect-selena:hover img {
+    border: 15px solid white;
+}
