@@ -3,14 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/bt.css">
+    <title>baitapp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .input-section {
+            margin-bottom: 20px;
+        }
+        .box-shape {
+            margin: 20px auto;
+            cursor: pointer;
+            display: none;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        button {
+            padding: 10px 20px;
+            width: 200px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: red;
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="input-container" class="input-section">
-        <input id="color-input" type="text" placeholder="Vui lòng nhập mã màu"><br>
         <input id="width-input" type="number" placeholder="Vui lòng nhập chiều ngang"><br>
         <input id="height-input" type="number" placeholder="Vui lòng nhập chiều dọc"><br>
+        <input id="color-input" type="text" placeholder="Vui lòng nhập mã màu"><br>
         <button onclick="generateRectangle()">Submit</button>
     </div>
     <div id="box" class="box-shape"></div>
