@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 668px;
+    width: auto;
+}
+
+.box1 {
+    display: grid;
+}
+
+.box2 {
+    background-color: yellow;
+}
+
+.box3 {
+    background-color: aqua;
+}
+
+.box4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box6 {
+    background-color: indigo;
+}
+
+.box5 {
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+}
+
+.box7 {
+    background-color: brown;
+}
+
+.box8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box9 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box10 {
+    background-color: darkorange;
+}
+
+.box11 {
+    background-color: red;
+}
+
+.box12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.box13 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box14 {
+    background-color: pink;
+}
+
+.box15 {
+    background-color: gold;
+}
+
+.box16 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box17 {
+    background-color: navy;
+}
+
+.box18 {
+    background-color: salmon;
+}
+@media (max-width: 900px) {
+    .container, .box2, .box3,.box5, .box6, .box7,.box10, .box11, .box14,.box15,.box17, .box18 {
+        width: 380px;
+        height: 380px;
+    }
+}
+@media (max-width: 500px) {
+    .container, .box2, .box3,.box5, .box6, .box7,.box10, .box11, .box14,.box15,.box17, .box18 {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
