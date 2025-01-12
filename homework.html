@@ -3,342 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="/homework.css">
-</head>
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 668px;
+            width: auto;
+        }
+
+        .box1 {
+            display: grid;
+            background-color: rgb(60, 71, 173);
+
+        }
+
+        .box2 {
+            background-color: yellow;
+        }
+
+        .box3 {
+            background-color: aqua;
+        }
+
+        .box4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: rgb(85, 219, 27);
+
+        }
+
+        .box5 {
+            display: grid;
+            background-color: rgb(245, 114, 240);
+
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .box6 {
+            background-color: indigo;
+        }
+
+        .box7 {
+            background-color: brown;
+        }
+
+        .box8 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: rgb(50, 147, 171);
+
+        }
+
+        .box9 {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            background-color: rgb(255, 167, 105);
+
+        }
+
+        .box10 {
+            background-color: darkorange;
+        }
+
+        .box11 {
+            background-color: red;
+        }
+
+        .box12 {
+            display: grid;
+            background-color: rgb(12, 139, 159);
+
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .box13 {
+            display: grid;
+            background-color: rgb(147, 194, 20);
+
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .box14 {
+            background-color: pink;
+        }
+
+        .box15 {
+            background-color: gold;
+        }
+
+        .box16 {
+            background-color: rgb(162, 25, 167);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .box17 {
+            background-color: navy;
+        }
+
+        .box18 {
+            background-color: salmon;
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            .container, .box1, .box2, .box3,.box4, .box5, .box6, .box7, .box8,.box9, .box10, .box11, .box12, .box13, .box14,.box15, .box16, .box17, .box18 {
+                width: 380px;
+                height: 380px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container, .box1, .box2, .box3,.box4, .box5, .box6, .box7, .box8,.box9, .box10, .box11, .box12, .box13, .box14,.box15, .box16, .box17, .box18 {
+                width: 240px;
+                height: 240px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="timkiem">
-            <span class="logo">
-                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Green.png">
-            </span>
-            <span class="home">
-                <img src="https://cdn0.iconfinder.com/data/icons/set-app-incredibles/24/Home-01-1024.png" alt="Home Icon">
-            </span>
-            <span class="search-bar">
-                <input type="text" placeholder="What do you want to play?                                                   | ">
-            </span> 
-            <span class="user">
-                <img src="https://cdn0.iconfinder.com/data/icons/mobile-basic-vol-1/32/Notification-512.png" alt="thongbao">
-                <img src="https://media.vov.vn/sites/default/files/styles/large/public/2024-01/rose-1076012.jpeg.jpg" alt="">
-            </span>
-        </div>
-        <div class="thanhdoc">
-            <div class="first">
-                <span class="text"><p>Your Library</p></span>
-                <span class="cong"><img src="https://cdn3.iconfinder.com/data/icons/user-interface-169/32/plus-512.png" alt=""></span>
-                <span class="lon"><img src="https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/512/circle-right-512.png" alt=""></span>
-            </div>
-            <div class="chose">
-                <span class="playlist"><p>playlist</p></span>
-                <span class="Podcasts"><p>Podcasts</p></span>
-                <span class="Albums"><p>Albums</p></span>
-                <span class="lon2"><p>></p></span>
-            </div>
-            <div class="search">
-                <span class="kinh"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-512.png" alt=""></span>
-                <span class="recents"><p>Recents</p></span>
-                <span class="Recents"><img src="https://cdn1.iconfinder.com/data/icons/jumpicon-basic-ui-glyph-1/32/-_Hamburger-Menu-More-Navigation-List-256.png" alt=""></span>
-            </div>
-            <div class="music">
-                <table class="picture">
-                    <tr>
-                      <td>
-                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8470d229cb865e8d81cdce0889" alt="Liked Songs">
-                      </td>
-                      <td>
-                        <div class="text">Liked Songs</div>
-                        <div class="playlist">Playlist: 2,719 songs</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfSYZTb6fdTbgCm0GbNSYAy0wt0uZLtv_Bw&s" alt="Hãy Trao Cho Anh">
-                      </td>
-                      <td>
-                        <div class="text">Hãy Trao Cho Anh</div>
-                        <div class="playlist">Sơn Tùng M-TP</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzSvJEfJZ2uYNNtS_qgo_cqn4yhClk4zi5w&s" alt="Rosé">
-                      </td>
-                      <td>
-                        <div class="text">Rosé</div>
-                        <div class="playlist">BLACKPINK Solo</div>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td>
-                          <img src="https://i.scdn.co/image/ab6761610000e5eb91d2d39877c13427a2651af5" alt="Hãy Trao Cho Anh">
-                        </td>
-                        <td>
-                          <div class="text">Nấu Ăn Cho Em</div>
-                          <div class="playlist">Đen Vâu</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="https://i.scdn.co/image/ab67616d0000b273cc3a494938dedc39ec248c44" alt="Rosé">
-                        </td>
-                        <td>
-                          <div class="text">OK</div>
-                          <div class="playlist">Binz</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="https://i.scdn.co/image/ab67616d0000b273487ba883da50b85c581f306f" alt="Hãy Trao Cho Anh">
-                        </td>
-                        <td>
-                          <div class="text">Có Em Chờ</div>
-                          <div class="playlist">Min</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <img src="https://i.scdn.co/image/ab67616d0000b273f0ce05b7f13e0ce2b74396cc" alt="Rosé">
-                        </td>
-                        <td>
-                          <div class="text">Em Bé</div>
-                          <div class="playlist">karik X Amee</div>
-                        </td>
-                      </tr>
-                  </table>
-
-
-            </div>
-        </div>
-        <div class="giua">
-            <div class="topp">
-                <div class="top">
-                    <span class="luachon">All</span>
-                    <span class="luachon">Music</span>
-                    <span class="luachon">Podcasts</span>
-                </div>
-            </div>
-            <table class="table">
-                <tr>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://i.scdn.co/image/ab6761610000e5ebe672b5f553298dcdccb0e676" alt=""></span>
-                            <span class="right">Taylor Swift</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://i.scdn.co/image/ab67616d00001e022a038d3bf875d23e4aeaa84e" alt=""></span>
-                            <span class="right">Billie Eilish</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://i.scdn.co/image/ab67616d0000b273f907de96b9a4fbc04accc0d5" alt=""></span>
-                            <span class="right">Drake</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://lite-images-i.scdn.co/image/ab67656300005f1f65532f1f31d56f8addbb370b" alt=""></span>
-                            <span class="right">Ariana Grande</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://i.scdn.co/image/ab6761610000e5eb784daff754ecfe0464ddbeb9" alt=""></span>
-                            <span class="right">Ed Sheeran</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a" alt=""></span>
-                            <span class="right">Olivia Rodrigo</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://i.scdn.co/image/ab6761610000e5eb9e528993a2820267b97f6aae" alt=""></span>
-                            <span class="right">The Weeknd</span>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="cell">
-                            <span class="left"><img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/3/12/1156939/Justin-Bieber3-1-857.jpg" alt=""></span>
-                            <span class="right">Justin Bieber</span>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <div class="choosemusic">
-                <div class="row">
-                    <div class="section">
-                        <h2>Picked for you</h2>
-                        <table style="width: 100%;">
-                            <tr>
-                                <td style="text-align: left; width: 30%;padding: 5px;">
-                                    <img src="https://i.scdn.co/image/ab67706f00000002e9854751fd1e4e0061ecb9b0" alt="Christmas Music" style="max-width: 100%; height: auto; border-radius: 8px;">
-                                </td>
-                                <td style="text-align: left; width: 70%; padding: 10px; color: white;">
-                                    <h3>Christmas Music</h3>
-                                    <p>Find your favorite Christmas playlists right here!</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                    <div class="section">
-                        <h2>Made For WordsOfWisdom</h2>
-                        <div class="items-row">
-                            <div class="item">
-                                <img src="https://i.scdn.co/image/ab6761610000e5ebe1cbc9e7ba8fbc5d7738ea51" alt="Daily Mix 01">
-                                <h3 class="color0">Daily Mix 01</h3>
-                                <p>Fleetwood Mac, Eagles, Jackson...</p>
-                            </div>
-                            <div class="item">
-                                <img src="https://i.scdn.co/image/ab67616d0000b27387bfec023ebe8c31c6eb348b" alt="Daily Mix 02">
-                                <h3 class="color1">Daily Mix 02</h3>
-                                <p>The Rolling Stones, Led Zeppelin, The...</p>
-                            </div>
-                            <div class="item">
-                                <img src="https://i.scdn.co/image/ab6761610000e5eb655c4a2a98366c2a276f6e9b" alt="Daily Mix 03">
-                                <h3 class="color2">Daily Mix 03</h3>
-                                <p>Cam, Low G, Ricky Star and more</p>
-                            </div>
-                            <div class="item">
-                                <img src="https://i.scdn.co/image/ab67616d0000b273e6f407c7f3a0ec98845e4431" alt="Daily Mix 04">
-                                <h3 class="color3">Daily Mix 04 </h3>
-                                <p>Yusuf / Cat Stevens, James Taylor, Gordon...</p>
-                                <h4>Show all</h4>
+        <div class="box1">
+            <div class="box3"></div>
+            <div class="box4">
+                <div class="box5">
+                    <div class="box7"></div>
+                    <div class="box8">
+                        <div class="box9">
+                            <div class="box11"></div>
+                            <div class="box12">
+                                <div class="box13">
+                                    <div class="box15"></div>
+                                    <div class="box16">
+                                        <div class="box17"></div>
+                                        <div class="box18"></div>
+                                    </div>
+                                </div>
+                                <div class="box14"></div>
                             </div>
                         </div>
+                        <div class="box10"></div>
                     </div>
                 </div>
-            </div>
-            <div class="title2">
-                <span><h1>Music videos for you</h1></span>
-                <span><h4>Show all</h4></span>
-            </div>
-            <table class="mv">
-                <tr>
-                    <td><img src="https://i.ytimg.com/vi/HhjHYkPQ8F0/maxresdefault.jpg" alt="Image 1"></td>
-                    <td><img src="https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2020/01/24/104805_1342017.png.2000x1085_q95_crop-smart_upscale.png" alt="Image 2"></td>
-                    <td><img src="https://i.ytimg.com/vi/xypzmu5mMPY/maxresdefault.jpg" alt="Image 3"></td>
-                    <td><img src="https://media.la34.com.vn/upload/image/201907/medium/77702_020719_sontung.jpg" alt="Image 4"></td>
-                </tr>
-                <tr class="text-row">
-                    <td><h3>Alone</h3>
-                        <p>Alan Walker</p>
-                    </td>
-                    <td>
-                        <h3>Yummy</h3>
-                        <p>justin bieber</p> 
-                    </td>
-                    <td>
-                        <h3>Muộn rồi mà sao còn</h3>
-                        <p>Sơn Tùng MTP</p>
-                    </td>
-                    <td>
-                        <h3>Hãy trao cho anh</h3>
-                        <p>Sơn Tùng MTP</p>
-                    </td>
-                </tr>
-            </table>
-            <div class="title3">
-                <span><h1>Instrumental</h1></span>
-                <span><h4>Show all</h4></span>
-            </div>
-            <table class="end">
-                <tr>
-                    <td><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdTGFbOV63cZtRtwaJB6r_UHZR0HXzzAWpmg4F123dw5TGU8YK" alt="1"></td>
-                    <td><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTC0eXBQPA21Y_mFiecBrBS0vFypzlXdS9dXnZLLNlQPn8OivjX" alt="2"></td>
-                    <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmqNj57PfvIBc9dCARyvclqvglnAw5vRWTEvN8RKckRYAbla3J" alt="3"></td>
-                    <td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEA2-6LVW8CaeV9jsgiyEKPlr0XML9rmmMZkIinW8jB0mM9gRh" alt="4"></td>
-                    <td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmP6Q7OBVNF4ykKYdzEFSYboS9k31_78apVuYqjQtp5kO3rd9J" alt="5"></td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewvt5s8xvo_vAuKPheSO_yjzv8K5AtPLm85LdpZYL4bSdg7Ji" alt="6"></td>
-                </tr>
-                <tr class="text-row-2">
-                    <td><h3>Peaceful Guitar</h3>
-                    </td>
-                    <td>
-                        <h3>Calming Acoustic</h3>
-                    </td>
-                    <td>
-                        <h3>Guitar for Sleep</h3>
-                    </td>
-                    <td>
-                        <h3>Guitar Focus</h3>
-                    </td>
-                    <td>
-                        <h3>Guitar Coffe</h3>
-                    </td>
-                    <td>
-                        <h3>Easy Classical</h3>
-                    </td>
-                </tr>
-
-            </table>
-
-        </div>
-        <div class="benphaiman">
-            <div class="background">
-                <div class="titleright">
-                    <span><h3>Christmas</h3></span>
-                    <span class="x"><img src="https://cdn1.iconfinder.com/data/icons/chunk/16/More-1024.png" alt=""></span>
-                    <span class="x"><img src="https://cdn2.iconfinder.com/data/icons/250-perfect-vector-pictograms/33/9.12-512.png" alt=""></span>
-                </div>
-                <div class="newsfeed">
-                     <div class="page"><img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20221202092511/5.jpg" alt=""></div>
-                     <div class="titlez">
-                        <h2>Have Yourself A Merry Little Christmas</h2>
-                        <p>Frank Sinatra</p>
-                     </div>
-                </div>
-                <div class="box">
-                    <span class="small1">
-                        <h2>lyrics</h2>
-                    </span>
-                    <span class="box2">
-                        <span class="small2">
-                            <h2>Show lyrics</h2>
-                        </span>
-                    </span>
-                </div>
-                <div class="background-small">
-                    <div class="picture-2">
-                        <img src="https://i.ytimg.com/vi/wkfJbozmQEI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAWS_7yLpp78pJYcbuMVD86rJwZRw" alt="">
-                    </div>
-                    <div class="cmnt"> 
-                        <h2>About the artist</h2>
-                    </div>
-                    <div class="profile">
-                        <h2>Frank Sinatra</h2>
-                        <p class="listeners">48,209,560 monthly listeners</p>
-                        <button class="unfollow">Unfollow</button>
-                        <p class="description">
-                            Frank Sinatra was arguably the most important musical figure of the 20th century, his only real rivals for the title being Elvis Presley and the Beatles. In a professional...
-                        </p>
-                    </div>
-                </div>
+                <div class="box6"></div>
             </div>
         </div>
-        <div class="thanhngang">
-            <span class="song">
-                <span class="avt-song">
-                    <img src="https://media.vietnamplus.vn/images/70ecbaf68ce60ced7af37d8bc1483e0f9fe29078b4db516dcd24689b49b9f37f33f6c8a2105281d43d95a05d239150b91d175058d9a59d4e21100ddb41c54c45/0201_MariahCarey.jpg" alt="">
-                </span>
-                <div class="name-song">
-                    <h2>All I Want for Christmas Is You</h2>
-                    <p>Mariah Carey</p>
-                </div>
-            </span>
-            <span class="audio">
-                <audio controls src="ahihi.mp3"></audio>
-            </span>
-        </div>
+        <div class="box2"></div>
     </div>
 </body>
 </html>
