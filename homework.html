@@ -3,153 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Baivenha</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        span {
+            font-size: 1rem;
+            color: rgb(255, 255, 255);
+        }
+        h1, h2, h3, h4, h5, h6, h7 {
+            font-family: "Google Sans" Roboto, arial, sans-serif;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+        }
+        h1 {
+            font-size: 65px;
+        }
+        h2 {
+            font-size: 55px;
+        }
+        h3 {
+            font-size: 45px;
+        }
+        h4 {
+            font-size: 40px;
+        }
+        h5 {
+            font-size: 37px;
+        }
+        h6 {
+            font-size: 34px;
+        }
+        
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 668px;
-            width: auto;
+            grid-template-columns: repeat(2, 1fr);
+            height: 100vh;
+            gap: 0;
         }
-
-        .box1 {
+        .box-1, .box-3, .box-5, .box-7 {
             display: grid;
-            background-color: rgb(60, 71, 173);
-
+            grid-template-rows: repeat(2, 1fr);
         }
-
-        .box2 {
-            background-color: yellow;
-        }
-
-        .box3 {
-            background-color: aqua;
-        }
-
-        .box4 {
+        .box-2, .box-4, .box-6, .box-8 {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: rgb(85, 219, 27);
-
+            grid-template-columns: repeat(2, 1fr);
         }
-
-        .box5 {
-            display: grid;
-            background-color: rgb(245, 114, 240);
-
-            grid-template-rows: 1fr 1fr;
+        .schedule {
+            display: flex;
+            background-color: #fdd350;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box6 {
-            background-color: indigo;
+        .speakers {
+            background-color: #6500f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box7 {
-            background-color: brown;
+        .tickets {
+            background-color: #ee0414;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box8 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: rgb(50, 147, 171);
-
+        .sponsors {
+            background-color: #00e3ea;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box9 {
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            background-color: rgb(255, 167, 105);
-
+        .venue {
+            background-color: #00b852;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box10 {
-            background-color: darkorange;
+        .home {
+            background-color: #fed44c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box11 {
-            background-color: red;
+        .block-purple {
+            background-color: #6500f5;
         }
-
-        .box12 {
-            display: grid;
-            background-color: rgb(12, 139, 159);
-
-            grid-template-columns: 1fr 1fr;
+        .close {
+            background-color: #312d29;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .box13 {
-            display: grid;
-            background-color: rgb(147, 194, 20);
-
-            grid-template-rows: 1fr 1fr;
+        .box-end {
+            background-color: #fdd350;
         }
-
-        .box14 {
-            background-color: pink;
+        .box-end2 {
+            background-color: #ee0414;
         }
-
-        .box15 {
-            background-color: gold;
-        }
-
-        .box16 {
-            background-color: rgb(162, 25, 167);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .box17 {
-            background-color: navy;
-        }
-
-        .box18 {
-            background-color: salmon;
-        }
-
-        /* Responsive design */
         @media (max-width: 900px) {
-            .container, .box1, .box2, .box3,.box4, .box5, .box6, .box7, .box8,.box9, .box10, .box11, .box12, .box13, .box14,.box15, .box16, .box17, .box18 {
-                width: 380px;
-                height: 380px;
+            .container {
+                grid-template-rows: 2fr 1fr;
+                grid-template-columns: auto;
+            }
+        }
+        @media (max-width: 500px){
+            .container-2 {
+                grid-template-rows: 2fr 1fr;
+                grid-template-columns: auto;
             }
         }
 
-        @media (max-width: 500px) {
-            .container, .box1, .box2, .box3,.box4, .box5, .box6, .box7, .box8,.box9, .box10, .box11, .box12, .box13, .box14,.box15, .box16, .box17, .box18 {
-                width: 240px;
-                height: 240px;
-            }
-        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box1">
-            <div class="box3"></div>
-            <div class="box4">
-                <div class="box5">
-                    <div class="box7"></div>
-                    <div class="box8">
-                        <div class="box9">
-                            <div class="box11"></div>
-                            <div class="box12">
-                                <div class="box13">
-                                    <div class="box15"></div>
-                                    <div class="box16">
-                                        <div class="box17"></div>
-                                        <div class="box18"></div>
+        <div class="box-1">
+            <div class="speakers">
+                <h2>speakers</h2> 
+                <span>Smart people. All in one place.</span> 
+            </div>
+            <div class="box-2">
+                <div class="box-3">
+                    <div class="sponsors"> 
+                        <h4>sponsors</h4> 
+                        <span>Find out who supports us</span>
+                    </div>
+                    <div class="box-4">
+                        <div class="box-5">
+                            <div class="home">
+                                <h6>home</h6> 
+                            </div>
+                            <div class="box-6">
+                                <div class="box-7">
+                                    <div class="close">
+                                        <h7>close</h7>
+                                    </div>
+                                    <div class="box-8">
+                                        <div class="box-end"></div>
+                                        <div class="box-end2"></div>
                                     </div>
                                 </div>
-                                <div class="box14"></div>
+                                <div class="block-purple"></div>
                             </div>
                         </div>
-                        <div class="box10"></div>
+                        <div class="venue">
+                            <h5>venue</h5> 
+                            <span>One place for all</span>
+                        </div>
                     </div>
                 </div>
-                <div class="box6"></div>
+                <div class="tickets">
+                    <h3>tickets</h3> 
+                    <span>Get the right ticket</span>
+                </div>
             </div>
         </div>
-        <div class="box2"></div>
+        <div class="schedule">
+            <h1>schedule</h1> 
+            <span>When the time is right, you'll learn.</span>
+        </div>
     </div>
 </body>
 </html>
