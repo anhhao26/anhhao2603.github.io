@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f8f9fa;
+    margin: 50px auto;
+  }
+  header {
+    text-align: center;
+    padding: 16px 0;
+  }
+  /* Tăng kích thước chữ "Pokemon API" */
+  header p {
+    font-size: 48px;
+    margin: 0;
+  }
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .search-input:focus {
+    border-color: black;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #app {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    padding: 10px;
+  }
+  @media (max-width: 1199px) {
+    #app {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 991px) {
+    #app {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 767px) {
+    #app {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  .pokemon:hover {
+    transform: scale(1.05);
+  }
+  .pokemon img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  .pokemon .id {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .pokemon .name {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .type {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .load-more {
+    cursor: pointer;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff4d4f;
+    transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+  }
+  .load-more:hover {
+    background-color: #d73c3e;
+  }
+  @media (max-width: 767px) {
+    .load-more {
+      width: 100%;
+      padding: 15px;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 575px) {
+    .load-more {
+      font-size: 12px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #ff6b6c;
+    }
+  }
