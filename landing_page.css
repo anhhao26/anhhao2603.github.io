@@ -584,11 +584,12 @@
   }
   /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
   .thong-baoo2 {
-      font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        width: 1425px;
-        background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;         /* Căn giữa container */
+    padding: 0;
+    max-width: 1425px;      /* Giới hạn chiều rộng tối đa */
+    width: 100%;            /* Sử dụng toàn bộ chiều rộng có sẵn */
+    background-color: #f9f9f9;
   }
   
   .thong-bao2 {
@@ -865,8 +866,8 @@
       }
       
       .type3 img {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         margin-bottom: 0.3rem;
       }
       
@@ -880,6 +881,7 @@
       .slider-controls3 button {
         width: 30px;
         height: 30px;
+        margin-bottom: 10px;
         font-size: 16px;
         border-radius: 50%;
         color: #bdb12e;
@@ -949,6 +951,13 @@
           height: 28px;
           font-size: 16px;
         }
+      }
+      .champion-types3 {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .champion-types3::-webkit-scrollbar {
+        display: none;
       }
   
   
@@ -1175,14 +1184,11 @@
       }
   
       .video-container5 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: relative;
         width: 100%;
-        height: 100vh;
+        aspect-ratio: 16/9;
         overflow: hidden;
       }
-  
       .video-container5 video {
         position: absolute;
         width: 100%;
@@ -1192,9 +1198,10 @@
       }
   
       .bt-35 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 2;
       }
   
@@ -1350,5 +1357,4 @@
       width: 100vw;      
       max-width: none;    
       box-sizing: border-box; 
-  }
-  
+      }
